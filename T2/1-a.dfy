@@ -14,3 +14,7 @@ method Multiply(a: nat, b: nat) returns (total: nat)
     i := i + 1;
   }
 }
+
+method Main() {
+    var result := Multiply(3, 2);
+}
