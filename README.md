@@ -1,4 +1,4 @@
-# t1-metodos-formais
+# metodos-formais
 Trabalhos da disciplina de Métodos Formais de 2018/II do curso de Ciência da Computação da PUCRS.
 
 Link para o documento:
