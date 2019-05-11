@@ -3,6 +3,7 @@
 
 method CalculaQuociente(x: nat, y: nat) returns (d: nat, r: nat)
   requires x >= 0 && y > 0
+  ensures r < y
   ensures x == y * d + r
 {
   d := 0;
@@ -11,6 +12,7 @@ method CalculaQuociente(x: nat, y: nat) returns (d: nat, r: nat)
   while r >= y
     decreases r - y
     invariant x == y * d + r
+    invariant r >= 0
   {
     r := r - y;
     d := d + 1;
